@@ -1,0 +1,47 @@
+SolForge DeckEditor
+
+I should be able to...
+
+list all cards
+search for a card by name
+list all cards filtered by faction
+
+create a new deck
+add cards to a deck
+remove cards to a deck
+change quantities of cards in a deck
+save a deck
+load a deck
+
+The app needs...
+
+an interface
+	card list view
+	deck list view
+	load/save deck view
+a database of cards
+a place to save decks
+
+
+Models..
+
+Card:
+id
+collection(Levels)
+rarity
+faction
+
+Level:
+id
+title
+card type
+creature type
+text
+attack
+health
+
+Deck:
+id
+title
+length
+collection(Cards)
