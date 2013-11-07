@@ -27,9 +27,9 @@ Models..
 
 Card:
 id
-collection(Levels)
 rarity
 faction
+collection(Levels)
 
 Level:
 id
