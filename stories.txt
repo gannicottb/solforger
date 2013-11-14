@@ -1,0 +1,15 @@
+Stories
+
+I can view a list of all SolForge cards.
+	Each card is represented by its name, faction, and rarity.
+	
+I can touch a card listing to view it.
+	This view will render the correct art.
+	I can either tap outside of the art to dismiss the view, or touch a button
+	
+I can scroll through the card's levels
+	Perhaps by swiping, but buttons would be ok too.
+
+I can add a card to a deck.
+	I can do this from the search list view.
+	Dragging from the search list to the deck list.

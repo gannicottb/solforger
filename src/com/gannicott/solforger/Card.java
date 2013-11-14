@@ -15,12 +15,11 @@ import com.orm.SugarRecord;
 public class Card extends SugarRecord<Card> {
 	
 	private String faction;
-	private String rarity;
-	private int id;	
-	private String title;
-	private Level level1;
-	private Level level2;
-	private Level level3;
+	private String rarity;	
+
+	private long levelOne;
+	private long levelTwo;
+	private long levelThree;
 	
 	
 	public Card(Context ctx)
@@ -28,24 +27,25 @@ public class Card extends SugarRecord<Card> {
 		super(ctx);
 	}
 	
-	public Card(Context ctx, String faction, String rarity, int id, String title)
+	public Card(Context ctx, String faction, String rarity, long level1, long level2, long level3)
 	{
 		super(ctx);
 		this.faction = faction;
-		this.rarity = rarity;
-		this.id = id;	
-		this.title = title;
+		this.rarity = rarity;	
+		
+		this.levelOne = level1;
+		this.levelTwo = level2;
+		this.levelThree = level3;
 	}
 	// What does the card need to do?
 	//Return values
 	public String faction() {return faction;}	
-	public String rarity() 	{return rarity;}	
-	public int id() 		{return id;}
+	public String rarity() 	{return rarity;}		
 	
 	@Override
 	public String toString()
 	{
-		return "id: "+id+" | title: "+title+
+		return "id: "+id+" | title: "+ "Title"+
 				"\n faction: "+faction+
 				"\n rarity: "+rarity;
 	}

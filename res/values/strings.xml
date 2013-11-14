@@ -4,5 +4,7 @@
     <string name="app_name">SolForger</string>
     <string name="action_settings">Settings</string>
     
+    <string name="list_icon_content_description">Card art thumbnail</string>
+    <string name="list_info_text">Card info</string>
    
 </resources>
